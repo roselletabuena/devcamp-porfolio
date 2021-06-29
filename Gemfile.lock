@@ -157,6 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcmysql-adapter
+  byebug
   coffee-rails (~> 4.2)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
