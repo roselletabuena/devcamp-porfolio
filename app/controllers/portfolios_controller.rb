@@ -9,12 +9,12 @@ class PortfoliosController < ApplicationController
 
 	def create
 		@portfolio_item = Portfolio.new(portfolio_params)
-			respond_to do |format|
-				if @portfolio_item.save
-					format.html { redirect_to portfolios_path, notice: "Your portfolio item is now live." }
-				else
-					format.html { render :new, status: :unprocessable_entity }
-				end
+		respond_to do |format|
+			if @portfolio_item.save
+				format.html { redirect_to portfolios_path, notice: "Your portfolio item is now live." }
+			else
+				format.html { render :new, status: :unprocessable_entity }
+			end
 		end
 	end
 
