@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_29_063150) do
+ActiveRecord::Schema.define(version: 2021_07_02_082631) do
 
   create_table "blogs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
@@ -19,7 +19,9 @@ ActiveRecord::Schema.define(version: 2021_06_29_063150) do
     t.datetime "updated_at", null: false
     t.string "slug"
     t.integer "status", default: 0
+    t.bigint "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
+    t.index ["topic_id"], name: "index_blogs_on_topic_id"
   end
 
   create_table "friendly_id_slugs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -49,6 +51,23 @@ ActiveRecord::Schema.define(version: 2021_06_29_063150) do
     t.integer "percent_utilized"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "badge"
   end
 
+  create_table "technologies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.bigint "portfolio_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id"
+  end
+
+  create_table "topics", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "blogs", "topics"
+  add_foreign_key "technologies", "portfolios"
 end
