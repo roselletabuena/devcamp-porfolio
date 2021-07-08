@@ -106,6 +106,8 @@ GEM
     nokogiri (1.11.7-java)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    petergate (1.9.1)
+      activerecord (> 4.0.0)
     popper_js (1.16.0)
     puma (3.12.6-java)
     racc (1.5.2-java)
@@ -196,6 +198,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
+  petergate (~> 1.7)
   puma (~> 3.11)
   rails (~> 5.2.6)
   sass-rails (~> 5.0)
