@@ -26,7 +26,7 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'coffee-script-source', '~>1.8.0'
-
+gem 'devcampr_view_tool', git: 'https://github.com/roselletabuena/devcampr_view_tool'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

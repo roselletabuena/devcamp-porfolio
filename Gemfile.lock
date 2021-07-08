@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/roselletabuena/devcampr_view_tool
+  revision: 2f716dd0bd5a185a94e452ca211dfee2d98f0796
+  specs:
+    devcampr_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -130,7 +136,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
-    rake (13.0.3)
+    rake (13.0.4)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -185,6 +191,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   coffee-script-source (~> 1.8.0)
+  devcampr_view_tool!
   devise (~> 4.2)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

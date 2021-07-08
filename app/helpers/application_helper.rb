@@ -15,4 +15,8 @@ module ApplicationHelper
 		end 
 	end 
 
+	def copyright_generator
+		DevcamprViewTool::Renderer.copyright 'Roselle Tabuena', 'All rights reserved'
+	end
+
 end
