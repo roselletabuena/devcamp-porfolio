@@ -16,18 +16,14 @@
   </head>
 
   <body>
-    
-    <%= render "shared/nav", location: 'top'  %>
-    
-    <%= login_helper %>
-    
+  
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <%= yield %>
-    </div>
-
-    <footer><%= copyright_generator %></footer>
-
-    <%= source_helper("application") %>
+        <%= render "shared/application_nav" %>
+        <%#=login_helper %>
     
+        <%= yield %>
+       
+        <%= source_helper("application") %>
+    </div>
   </body>
 </html>
