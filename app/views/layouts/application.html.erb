@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
      
@@ -21,7 +25,7 @@
     
     <%= yield %>
 
-    <%= copyright_generator %>
+    <footer><%= copyright_generator %></footer>
 
     <%= source_helper("application") %>
     
