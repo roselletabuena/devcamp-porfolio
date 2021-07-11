@@ -1,5 +1,8 @@
-<h1>New Blog</h1>
 
+<div class="card p-4 w-75 user-card">
+<h1 class="mb-3">New Blog</h1>
 <%= render 'form', blog: @blog %>
+<%= link_to 'Back', blogs_path, class: "mt-5"%>
+</div>
 
-<%= link_to 'Back', blogs_path %>
+

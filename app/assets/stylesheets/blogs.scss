@@ -7,3 +7,19 @@
 .blog-masthead a {
     color: rgb(71, 58, 58);
 }
+
+.card-about {
+    background-color: rgb(247, 247, 247);
+    border: 0;
+    border-radius: 0;
+}
+
+.user-card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+textarea {
+    height: 200px;
+}
