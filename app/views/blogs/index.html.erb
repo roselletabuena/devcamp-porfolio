@@ -2,21 +2,8 @@
 
 <h1>Blogs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Blog Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
-</table>
-
+  <%= render @blogs %>
+  
 <br>
 
 <%= link_to 'New Blog', new_blog_path  if logged_in?(:site_admin)  %>
