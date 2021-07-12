@@ -215,6 +215,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 1.0, >= 1.0.1)
   petergate (~> 1.7)
+  popper_js (~> 1.11, >= 1.11.1)
   puma (~> 3.11)
   rails (~> 5.2.6)
   sass-rails (~> 5.0)
