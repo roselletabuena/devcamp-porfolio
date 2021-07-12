@@ -14,15 +14,21 @@
   </head>
 
   <body>
+
     <%= render "shared/blog_nav", location: 'top' %>
-    <%#s= login_helper %>
+      
     <div class="container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= render "shared/blog_masthead" %>
+   
+      <%= yield %>
     </div>
-    
-    <%= source_helper("blog") %>
-    
+     <%= source_helper("blog") %>
+    <%= render "shared/blog_footer" %>
+   
+
   </body>
 </html>
