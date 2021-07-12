@@ -48,3 +48,9 @@ footer {
     margin-top: 10px;
     border-radius: 20px;
 }
+
+a.nav-link.active {
+    background-color: white;
+    color: #414141;
+    border-radius: 4px;
+}
