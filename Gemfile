@@ -32,6 +32,10 @@ gem 'font-awesome-rails', '~> 4.7'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'popper_js', '~> 1.11', '>= 1.11.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.6'
+gem 'carrierwave-aws', '~> 1.0', '>= 1.0.2'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
