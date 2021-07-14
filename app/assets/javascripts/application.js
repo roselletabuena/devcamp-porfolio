@@ -20,4 +20,4 @@
 //= require popper
 //= require bootstrap
 //= require cocoon
-
+//= require gritter
