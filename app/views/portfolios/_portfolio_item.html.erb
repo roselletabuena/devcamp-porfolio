@@ -1,5 +1,6 @@
 <div class="card mb-4 box-shadow mx-2" data-id="<%= portfolio_item.id %>"> 
-    <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
+    <%= image_tag portfolio_item.thumb_image.url unless portfolio_item.thumb_image.nil? %>
+    
     <div class="card-body">
         <p class="card-text"><%= portfolio_item.subtitle %></p>
         <div class="d-flex justify-content-between align-items-center">
