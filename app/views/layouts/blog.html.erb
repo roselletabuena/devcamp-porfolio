@@ -17,18 +17,16 @@
 
     <%= render "shared/blog_nav", location: 'top' %>
       
-    <div class="container">
-
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <div class="container pt-5">
 
       <%= render "shared/blog_masthead" %>
    
       <%= yield %>
     </div>
-     <%= source_helper("blog") %>
+    <%= source_helper("blog") %>
     <%= render "shared/blog_footer" %>
-   
+    
+    <%= alerts %>
 
   </body>
 </html>
