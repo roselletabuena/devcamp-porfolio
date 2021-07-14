@@ -1,6 +1,6 @@
 <div class="row">  
     <div class="col-md-7">
-        <%= image_tag portfolio_img(@portfolio_item.main_image.url, 'main_image') %>
+        <%= image_tag portfolio_img(@portfolio_item.main_image.url, 'main_image'), class: 'img-fluid'%>
     </div>
 
     <div class="col-md-5">
@@ -17,4 +17,14 @@
             <p><%= t.name %></p> 
         <% end %>       
     </div>
+
+    
+    <% if logged_in?(:site_admin) %>
+        <div class="col-md-12 mt-3">
+            <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        </div>
+    <% end %>
+    
+
+
 </div>

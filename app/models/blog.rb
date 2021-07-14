@@ -4,7 +4,7 @@ class Blog < ApplicationRecord
    friendly_id :title, use: :slugged 
 
    validates_presence_of :title, :body
-   belongs_to :topic
+   belongs_to :topic, optional: true
    
    def self.special_blogs
       all

@@ -35,13 +35,15 @@
 
 <div class="col-md-12">
   <h3><%= f.label :technologies %></h3>
-  <%= f.fields_for :technologies do |technology_form| %>
-    <div class="form-group row ml-1">
-      <%= technology_form.label :name, class: "mr-2" %>
-      <%= technology_form.text_field :name, class: "form-control" %>
+  <div>
+    <%= f.fields_for :technologies do |technology_form| %>
+      <%= render 'technology_fields', f: technology_form %>
+    <% end %>
+
+    <div>
+      <%= link_to_add_association 'Add technology', f, :technologies %>
     </div>
-  <% end %>
-  
+  </div>
   <div class="actions">
     <%= f.submit class: "btn btn-primary form-control" %>
   </div>

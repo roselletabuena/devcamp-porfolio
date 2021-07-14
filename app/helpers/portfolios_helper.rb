@@ -6,7 +6,7 @@ module PortfoliosHelper
     def portfolio_img img, type
         if img  
             img
-        elsif type == 'thumb'
+        elsif type == 'thumb_image'
             image_generator(height: '350', width: '200')
         else
             image_generator(height: '600', width: '400')
