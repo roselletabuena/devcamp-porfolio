@@ -15,6 +15,7 @@
 //= require activestorage
 //= require jquery-ui
 //= require html.sortable
+//= require cable
 //= require turbolinks
 //= require_tree .
 //= require popper
