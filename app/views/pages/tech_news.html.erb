@@ -1,0 +1,14 @@
+<h3>Rails News</h3>
+  
+
+<div class="row">
+<% @tweets.each do |tweet| %>
+    <div class="col-md-6 text-dark mb-2">
+        <div class="card">
+            <div class="card-body">
+                <p><%= tweet %></p>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div>
